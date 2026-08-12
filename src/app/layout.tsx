@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dress To Impress Codes & Runway Theme Helper — Roblox DTI Wiki',
     description: 'Get active DTI codes, theme outfit recipes, clothing layering hacks, and 5-star runway tips.',
-    url: 'https://dti-wiki.vercel.app',
+    url: 'https://dti-wiki-1.vercel.app',
     siteName: 'DTI Wiki',
     locale: 'en_US',
     type: 'website',

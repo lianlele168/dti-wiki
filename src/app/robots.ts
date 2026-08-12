@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://dti-wiki.vercel.app/sitemap.xml',
+    sitemap: 'https://dti-wiki-1.vercel.app/sitemap.xml',
   };
 }
