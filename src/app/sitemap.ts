@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dti-wiki-1.vercel.app';
+  const baseUrl = 'https://dti.robloxwikihub.com';
   const currentDate = new Date().toISOString();
 
   return [

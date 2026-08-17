@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dti-wiki.vercel.app'),
+  metadataBase: new URL('https://dti.robloxwikihub.com'),
   alternates: {
     canonical: '/',
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dress To Impress Codes & Runway Theme Helper — Roblox DTI Wiki',
     description: 'Get active DTI codes, theme outfit recipes, clothing layering hacks, and 5-star runway tips.',
-    url: 'https://dti-wiki.vercel.app',
+    url: 'https://dti.robloxwikihub.com',
     siteName: 'DTI Wiki',
     locale: 'en_US',
     type: 'website',
@@ -53,7 +53,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Dress To Impress Wiki',
-    url: 'https://dti-wiki.vercel.app',
+    url: 'https://dti.robloxwikihub.com',
     description: 'The premier community guide for Roblox Dress To Impress (DTI) with active codes, theme outfit recipes, and layering hacks.',
   };
 
