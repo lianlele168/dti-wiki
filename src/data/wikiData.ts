@@ -33,14 +33,29 @@ export interface PosePackItem {
 }
 
 export const ACTIVE_CODES: CodeItem[] = [
-  { code: 'LANABODY', reward: 'Lana Full Body Suit & Pearl Heels', itemType: 'Clothing', status: 'Active', addedDate: 'August 2026' },
-  { code: 'M3GAN', reward: 'M3GAN Doll Dress & Sleek Blonde Hair', itemType: 'Clothing', status: 'Active', addedDate: 'August 2026' },
-  { code: 'LABOTS', reward: 'Futuristic Cyber Boots & Visor Glasses', itemType: 'Accessory', status: 'Active', addedDate: 'August 2026' },
-  { code: 'TEARS', reward: 'Glitter Crying Makeup & Eye Tears Effect', itemType: 'Makeup', status: 'Active', addedDate: 'July 2026' },
-  { code: 'LANA', reward: 'Lana Off-Shoulder Corset & Pearl Necklace', itemType: 'Clothing', status: 'Active', addedDate: 'July 2026' },
-  { code: 'KREEK', reward: 'KreekCraft Special Crown & Hairpin', itemType: 'Accessory', status: 'Active', addedDate: 'June 2026' },
-  { code: 'CHOPPING', reward: 'Chopping Board Designer Handbag', itemType: 'Accessory', status: 'Active', addedDate: 'June 2026' },
-  { code: 'FASHION2026', reward: '1,500 Free Pink Cash', itemType: 'Cash', status: 'Active', addedDate: 'May 2026' },
+  { code: 'LANADOLLDRESS', reward: 'Lana Tutu Dress', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'PROUD', reward: 'Pride 2026 Rainbow Dress', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'CA11MEHHALEY', reward: 'Bear Ears, Dress, and Onesie', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'CH00P1E_B4CK_AGA1N', reward: 'Choopie Outfit Set Rework', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'VANILLAMACE', reward: 'Head Accessory / Headscarf', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'PIXIIUWU', reward: 'Flowing Long Dress', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'ANGELT4NKED', reward: 'Special Helmet', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: '3NCHANTEDD1ZZY', reward: 'Magical Wand', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: '1CON1CF4TMA', reward: 'Sweater / Sweater Dress', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'MEGANPLAYSBOOTS', reward: 'MeganPlays Boots', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'LANA', reward: 'White Shorts, Shirt, and Legwarmers', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'LANABOW', reward: 'White Bow Accessory', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'BELALASLAY', reward: 'Black Jacket with Pink Halter Top', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'UMOYAE', reward: 'Blue Minidress', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'D1ORST4R', reward: 'Designer Bag and Bow', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'ELLA', reward: 'Pink Skirt', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'ASHLEYBUNNI', reward: 'Bunny Slippers', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'LEAHASHE', reward: 'Sweatshirt and Sweatpants Set', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'KREEK', reward: 'KreekCraft Bear Hat', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'KITTYUUHH', reward: 'Black Pet Cat', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'LABOOTS', reward: 'Black Cyber Boots', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'TEKKYOOZ', reward: 'Pearl Handbag', itemType: 'Accessory', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'M3RM4ID', reward: 'Orange Mermaid Set', itemType: 'Clothing', status: 'Active', addedDate: 'August 17, 2026' },
 ];
 
 export const EXPIRED_CODES: CodeItem[] = [

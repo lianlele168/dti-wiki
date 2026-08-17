@@ -9,13 +9,49 @@ export const metadata: Metadata = {
 };
 
 export default function CodesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I redeem codes in Roblox Dress To Impress (DTI)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Launch Dress To Impress on Roblox, spawn into the dressing room, click the pink handbag/code button on the left sidebar, enter your code into the text field, and press the checkmark button.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are DTI promo codes permanent once redeemed?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! Once redeemed, clothes, hairstyles, makeup looks, and accessories remain permanently in your DTI wardrobe inventory.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is my DTI code not working?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'DTI codes are case-sensitive and must be typed in ALL CAPS. Ensure you do not leave trailing spaces when pasting codes.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Header */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-inner">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          <span>Verified Active in Roblox DTI: August 12, 2026</span>
+          <span>Verified Active in Roblox DTI: August 17, 2026</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
           Dress To Impress Codes <span className="text-pink-400">(August 2026)</span>
@@ -112,3 +148,4 @@ export default function CodesPage() {
     </div>
   );
 }
+

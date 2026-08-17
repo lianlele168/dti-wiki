@@ -4,6 +4,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://dti-wiki.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'Dress To Impress Codes & Theme Guide (August 2026) — Roblox DTI Wiki',
   description: 'Updated Roblox Dress To Impress (DTI) codes for free clothes & makeup. Explore runway theme outfit combos, clothing layering hacks, and 5-star guides.',
   keywords: [
@@ -18,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dress To Impress Codes & Runway Theme Helper — Roblox DTI Wiki',
     description: 'Get active DTI codes, theme outfit recipes, clothing layering hacks, and 5-star runway tips.',
-    url: 'https://dti-wiki-1.vercel.app',
+    url: 'https://dti-wiki.vercel.app',
     siteName: 'DTI Wiki',
     locale: 'en_US',
     type: 'website',
@@ -32,6 +36,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: '/favicon.svg',
+  },
   verification: {
     google: 'K0YFUdYGQH2cucEllkbzoEcKAZoFJ7rGguAERbz2ZGM',
   },
@@ -42,8 +49,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Dress To Impress Wiki',
+    url: 'https://dti-wiki.vercel.app',
+    description: 'The premier community guide for Roblox Dress To Impress (DTI) with active codes, theme outfit recipes, and layering hacks.',
+  };
+
   return (
     <html lang="en" className="dark">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-[#0b050f] text-pink-50 min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-grow">{children}</main>
@@ -52,3 +73,4 @@ export default function RootLayout({
     </html>
   );
 }
+
