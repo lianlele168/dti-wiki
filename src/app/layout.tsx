@@ -5,9 +5,6 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dti.robloxwikihub.com'),
-  alternates: {
-    canonical: '/',
-  },
   title: 'Dress To Impress Codes & Theme Guide (August 2026) — Roblox DTI Wiki',
   description: 'Updated Roblox Dress To Impress (DTI) codes for free clothes & makeup. Explore runway theme outfit combos, clothing layering hacks, and 5-star guides.',
   keywords: [
