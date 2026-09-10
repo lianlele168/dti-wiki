@@ -8,6 +8,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Outfit Generator', href: '/outfit-generator', icon: Sparkles },
     { name: 'Codes', href: '/codes', icon: Gift },
     { name: 'Theme Guide', href: '/theme-guide', icon: Shirt },
     { name: 'Layering Hacks', href: '/layering-hacks', icon: Layers },
