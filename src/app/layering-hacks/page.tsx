@@ -20,6 +20,24 @@ export default function LayeringHacksPage() {
         </p>
       </div>
 
+      {/* Dressing Room Screenshot Showcase */}
+      <div className="relative rounded-2xl overflow-hidden border border-pink-500/30 shadow-2xl bg-slate-900/60 aspect-video max-w-4xl mx-auto my-6">
+        <img
+          src="/images/dti-dressing-room.webp"
+          alt="Roblox Dress To Impress VIP Dressing Room and Layering Studio"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
+          <div className="text-xs sm:text-sm text-slate-200 font-medium">
+            <span className="text-pink-400 font-bold">VIP Styling Salon</span> — Layering corsets, skirts & custom palette blending
+          </div>
+          <span className="px-2.5 py-1 bg-pink-500/20 text-pink-300 text-[11px] rounded-lg border border-pink-500/30">
+            Pro Styling Studio
+          </span>
+        </div>
+      </div>
+
       {/* List */}
       <div className="space-y-6">
         {LAYERING_HACKS.map((hack, idx) => (

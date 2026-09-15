@@ -3,11 +3,18 @@ import { Gift, Shirt, Layers, Award, Sparkles, CheckCircle2, ArrowRight, Heart }
 import { ACTIVE_CODES } from '@/data/wikiData';
 import CopyButton from '@/components/CopyButton';
 import ThemeOutfitHelper from '@/components/ThemeOutfitHelper';
+import AuthorCard from '@/components/AuthorCard';
 
 export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    dateModified: '2026-09-15',
+    author: {
+      '@type': 'Person',
+      name: 'Chloe Sinclair',
+      jobTitle: 'Top Model & Runway Styling Strategist',
+    },
     mainEntity: [
       {
         '@type': 'Question',
@@ -75,6 +82,36 @@ export default function HomePage() {
             <div className="glass-panel p-3.5 rounded-xl text-center">
               <div className="text-2xl font-extrabold text-rose-400">5 Stars</div>
               <div className="text-[11px] text-slate-400">Runway Guides</div>
+            </div>
+          </div>
+
+          {/* Author Card */}
+          <div className="max-w-3xl mx-auto text-left">
+            <AuthorCard
+              authorName="Chloe Sinclair"
+              role="Top Model & Runway Styling Strategist"
+              experience="Top 50 Runway Rank & 1,200+ Podiums"
+              patchVersion="Brat Runway Update Verified"
+              lastUpdated="September 2026"
+              editorialNote="All theme palettes, VIP clipping layering combos, and pose animation frame ratings are tested in competitive public and pro lobbies."
+            />
+          </div>
+
+          {/* Runway Screenshot Showcase */}
+          <div className="relative rounded-2xl overflow-hidden border border-pink-500/30 shadow-2xl bg-slate-900/60 aspect-video max-w-4xl mx-auto my-6">
+            <img
+              src="/images/dti-runway-showcase.webp"
+              alt="Roblox Dress To Impress Finale Runway 5 Star Voting Competition"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
+              <div className="text-xs sm:text-sm text-slate-200 font-medium">
+                <span className="text-pink-400 font-bold">Runway Finale</span> — 5-star Hollywood Glamour podium voting & pose synchronization
+              </div>
+              <span className="px-2.5 py-1 bg-pink-500/20 text-pink-300 text-[11px] rounded-lg border border-pink-500/30">
+                Top Model Verified
+              </span>
             </div>
           </div>
 
