@@ -3,7 +3,11 @@ import { Layers, Sparkles, Lightbulb, CheckCircle2 } from 'lucide-react';
 import { LAYERING_HACKS } from '@/data/wikiData';
 
 export const metadata: Metadata = {
-  title: 'Dress To Impress Clothing Layering Hacks (August 2026) — DTI Tips',
+  alternates: {
+    canonical: '/layering-hacks',
+  },
+
+  title: 'Dress To Impress Clothing Layering Hacks (September 2026) — DTI Tips',
   description: 'Pro outfit layering hacks for Roblox Dress To Impress (DTI). Learn how to layer corsets, skirts, and dresses to build custom runway gowns.',
 };
 

@@ -3,7 +3,11 @@ import { Award, Star, Sparkles } from 'lucide-react';
 import { POSE_PACK_DATA } from '@/data/wikiData';
 
 export const metadata: Metadata = {
-  title: 'Dress To Impress Pose Pack Tier List (August 2026) — DTI Poses',
+  alternates: {
+    canonical: '/pose-tier-list',
+  },
+
+  title: 'Dress To Impress Pose Pack Tier List (September 2026) — DTI Poses',
   description: 'Ranking for all Roblox Dress To Impress (DTI) pose packs including K-Pop Idol, Model Walk, and Vintage Hollywood poses.',
 };
 

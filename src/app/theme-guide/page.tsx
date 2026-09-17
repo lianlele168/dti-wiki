@@ -3,7 +3,11 @@ import { Shirt, Palette, Gift, Award } from 'lucide-react';
 import { DTI_THEMES } from '@/data/wikiData';
 
 export const metadata: Metadata = {
-  title: 'Dress To Impress Theme Outfit Guide (August 2026) — DTI Combos',
+  alternates: {
+    canonical: '/theme-guide',
+  },
+
+  title: 'Dress To Impress Theme Outfit Guide (September 2026) — DTI Combos',
   description: 'Complete Roblox Dress To Impress (DTI) theme outfit combinations guide for Y2K, Gothic Romance, Met Gala, Coquette, and Dark Academia.',
 };
 

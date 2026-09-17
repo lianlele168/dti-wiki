@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 import Link from 'next/link';
 import { Gift, Shirt, Layers, Award, Sparkles, CheckCircle2, ArrowRight, Heart } from 'lucide-react';
 import { ACTIVE_CODES } from '@/data/wikiData';
@@ -18,7 +25,7 @@ export default function HomePage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What are active Dress To Impress (DTI) codes for August 2026?',
+        name: 'What are active Dress To Impress (DTI) codes for September 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Active DTI codes include LANABODY, M3GAN, LABOTS, TEARS, and LANA. Redeem them for free dresses, doll hair, cyber boots, and crying glitter makeup.',
@@ -51,7 +58,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-pink-900/40 text-pink-300 border border-pink-700/50 shadow-inner">
             <Sparkles className="w-3.5 h-3.5 text-pink-400" />
-            <span>Updated for August 2026 Runway Update</span>
+            <span>Updated for September 2026 Runway Update</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight">

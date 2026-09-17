@@ -2,7 +2,11 @@ import type { Metadata } from 'next';
 import { Coins, Sparkles, Zap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Dress To Impress Pink Cash Farming Guide (August 2026) — Fast Cash',
+  alternates: {
+    canonical: '/currency-farming',
+  },
+
+  title: 'Dress To Impress Pink Cash Farming Guide (September 2026) — Fast Cash',
   description: 'How to farm Pink Cash fast in Roblox Dress To Impress (DTI) to buy pose packs, VIP hair, and Lana lore items.',
 };
 

@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { Star, Sparkles, Wand2, Trophy, HelpCircle, Palette, Layers, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/beginner-guide',
+  },
+
   title: 'Dress To Impress 5-Star Runway Guide — Master Podium Wins & Layering Combos',
   description: 'Pro runway masterclass for Roblox Dress To Impress (DTI). Learn how to layer corsets and skirts, select flawless color palettes, cycle runway poses, and secure 5-star podium wins.',
   keywords: ['dress to impress guide', 'dti 5 star runway', 'dti layering hacks', 'how to win in dti', 'dti podium tips']

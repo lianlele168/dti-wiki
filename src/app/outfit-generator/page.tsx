@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: 'DTI Outfit Generator: 5-Star Runway Score Calculator & Theme Helper',
   description: 'Interactive Dress To Impress (DTI) outfit recipe generator and runway score calculator. Search themes, calculate podium star ratings, and find instant layering codes.',
   alternates: {
-    canonical: 'https://dti.robloxwikihub.com/outfit-generator/',
+    canonical: 'https://dti.robloxwikihub.com/outfit-generator',
   },
   openGraph: {
     title: 'DTI Outfit Generator & 5-Star Runway Calculator',
     description: 'Instant theme outfit recipes and star score calculator for Roblox Dress To Impress.',
-    url: 'https://dti.robloxwikihub.com/outfit-generator/',
+    url: 'https://dti.robloxwikihub.com/outfit-generator',
     type: 'website',
   },
 };
@@ -22,7 +22,7 @@ export default function OutfitGeneratorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Dress To Impress 5-Star Outfit Generator & Score Calculator',
-    url: 'https://dti.robloxwikihub.com/outfit-generator/',
+    url: 'https://dti.robloxwikihub.com/outfit-generator',
     applicationCategory: 'GameApplication',
     operatingSystem: 'All',
     offers: {
