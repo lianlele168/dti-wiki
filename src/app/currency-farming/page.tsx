@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     canonical: '/currency-farming',
   },
 
-  title: 'Dress To Impress Pink Cash Farming Guide (September 2026) — Fast Cash',
+  title: 'Dress To Impress Pink Cash Farming Guide — Fast Cash',
   description: 'How to farm Pink Cash fast in Roblox Dress To Impress (DTI) to buy pose packs, VIP hair, and Lana lore items.',
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/layering-hacks',
   },
 
-  title: 'Dress To Impress Clothing Layering Hacks (September 2026) — DTI Tips',
+  title: 'Dress To Impress Clothing Layering Hacks — DTI Tips',
   description: 'Pro outfit layering hacks for Roblox Dress To Impress (DTI). Learn how to layer corsets, skirts, and dresses to build custom runway gowns.',
 };
 

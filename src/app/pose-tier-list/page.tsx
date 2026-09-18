@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/pose-tier-list',
   },
 
-  title: 'Dress To Impress Pose Pack Tier List (September 2026) — DTI Poses',
+  title: 'Dress To Impress Pose Pack Tier List — DTI Poses',
   description: 'Ranking for all Roblox Dress To Impress (DTI) pose packs including K-Pop Idol, Model Walk, and Vintage Hollywood poses.',
 };
 

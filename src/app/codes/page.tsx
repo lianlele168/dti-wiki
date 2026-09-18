@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: '/codes',
   },
 
-  title: 'Dress To Impress Codes (September 2026) — Free Clothes & Accessories',
+  title: 'Dress To Impress Codes — Free Clothes & Accessories',
   description: 'All active Roblox Dress To Impress (DTI) codes for free dresses, doll hair, cyber boots, and crying makeup. Updated daily.',
 };
 
@@ -55,10 +55,10 @@ export default function CodesPage() {
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-inner">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          <span>Verified Active in Roblox DTI: August 17, 2026</span>
+          <span>Verified Active in Roblox DTI: </span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-          Dress To Impress Codes <span className="text-pink-400">(September 2026)</span>
+          Dress To Impress Codes <span className="text-pink-400"></span>
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
           Redeem these official Roblox Dress To Impress (DTI) codes to unlock exclusive dresses, designer handbags, crying makeup, and free Pink Cash.

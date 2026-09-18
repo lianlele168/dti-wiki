@@ -29,7 +29,7 @@ export default function Footer() {
           <ul className="space-y-2 text-xs">
             <li>
               <Link href="/codes" className="hover:text-pink-300 transition-colors">
-                DTI Codes (August 2026)
+                DTI Codes 
               </Link>
             </li>
             <li>

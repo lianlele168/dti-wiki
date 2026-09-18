@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/theme-guide',
   },
 
-  title: 'Dress To Impress Theme Outfit Guide (September 2026) — DTI Combos',
+  title: 'Dress To Impress Theme Outfit Guide — DTI Combos',
   description: 'Complete Roblox Dress To Impress (DTI) theme outfit combinations guide for Y2K, Gothic Romance, Met Gala, Coquette, and Dark Academia.',
 };
 

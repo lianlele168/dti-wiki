@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dti.robloxwikihub.com'),
-  title: 'Dress To Impress Codes & Theme Guide (September 2026) — Roblox DTI Wiki',
+  title: 'Dress To Impress Codes & Theme Guide — Roblox DTI Wiki',
   description: 'Updated Roblox Dress To Impress (DTI) codes for free clothes & makeup. Explore runway theme outfit combos, clothing layering hacks, and 5-star guides.',
   keywords: [
     'dress to impress codes',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'dress to impress theme guide',
     'dti themes combos',
     'dress to impress layering hacks',
-    'dti codes september 2026'
+    'dti codes '
   ],
   authors: [{ name: 'DTI Wiki Team' }],
   openGraph: {

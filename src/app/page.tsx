@@ -16,7 +16,7 @@ export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    dateModified: '2026-09-15',
+
     author: {
       '@type': 'Person',
       name: 'Chloe Sinclair',
@@ -25,7 +25,7 @@ export default function HomePage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What are active Dress To Impress (DTI) codes for September 2026?',
+        name: 'What are active Dress To Impress (DTI) codes for ?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Active DTI codes include LANABODY, M3GAN, LABOTS, TEARS, and LANA. Redeem them for free dresses, doll hair, cyber boots, and crying glitter makeup.',
@@ -58,7 +58,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-pink-900/40 text-pink-300 border border-pink-700/50 shadow-inner">
             <Sparkles className="w-3.5 h-3.5 text-pink-400" />
-            <span>Updated for September 2026 Runway Update</span>
+            <span>Updated for Runway Update</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight">
@@ -99,7 +99,6 @@ export default function HomePage() {
               role="Top Model & Runway Styling Strategist"
               experience="Top 50 Runway Rank & 1,200+ Podiums"
               patchVersion="Brat Runway Update Verified"
-              lastUpdated="September 2026"
               editorialNote="All theme palettes, VIP clipping layering combos, and pose animation frame ratings are tested in competitive public and pro lobbies."
             />
           </div>

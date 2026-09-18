@@ -14,7 +14,7 @@ export default function AuthorCard({
   role = 'Top Model & Runway Styling Strategist',
   experience = 'Top 50 Runway Rank & 1,200+ Podiums',
   patchVersion = 'The Baddie & Brat Runway Update Verified',
-  lastUpdated = 'September 2026',
+  lastUpdated = '',
   editorialNote = 'All theme palettes, VIP clipping layering combos, and pose animation frame ratings are tested in competitive public and pro lobbies.',
 }: AuthorCardProps) {
   return (
@@ -41,9 +41,7 @@ export default function AuthorCard({
           <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-pink-500/10 text-pink-300 border border-pink-500/20">
             ✨ {patchVersion}
           </span>
-          <span className="text-xs text-slate-400">
-            Updated: <strong className="text-slate-200">{lastUpdated}</strong>
-          </span>
+          
         </div>
       </div>
 
