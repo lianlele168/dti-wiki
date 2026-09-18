@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Gift, ShieldCheck, AlertCircle, HelpCircle } from 'lucide-react';
 import { ACTIVE_CODES, EXPIRED_CODES } from '@/data/wikiData';
 import CopyButton from '@/components/CopyButton';
@@ -7,41 +8,39 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/codes',
   },
-
-  title: 'Dress To Impress Codes — Free Clothes & Accessories',
-  description: 'All active Roblox Dress To Impress (DTI) codes for free dresses, doll hair, cyber boots, and crying makeup. Updated daily.',
+  title: 'Dress To Impress Codes — Active Free Clothes & Accessories',
+  description:
+    'Every active Roblox Dress To Impress (DTI) code for free dresses, boots, bags and hairstyles, plus the full expired list and the zero-versus-O trap that breaks most redemptions.',
 };
+
+const FAQS = [
+  {
+    q: 'How do I redeem codes in Roblox Dress To Impress (DTI)?',
+    a: 'Launch Dress To Impress on Roblox, then click the pink handbag icon on the left side of the screen to open the codes menu. Type or paste the code into the "Enter code here" box and press the checkmark button. The item is added to your wardrobe immediately.',
+  },
+  {
+    q: 'Are DTI promo codes permanent once redeemed?',
+    a: 'Yes. Once redeemed, clothes, hairstyles, makeup looks and accessories stay permanently in your DTI wardrobe, even after the code itself expires for everyone else.',
+  },
+  {
+    q: 'Why is my DTI code not working?',
+    a: 'DTI codes are case-sensitive and several of them mix the number zero with the letter O. CH00P1E_B4CK_AGA1N, S3M_0W3N_Y4Y and C4LLMEHH4LEY all use zeroes, not the letter O. Copy and paste instead of typing, and make sure there are no trailing spaces.',
+  },
+  {
+    q: 'Can I recolour items unlocked by codes?',
+    a: 'Yes. Equip the item, then step onto the circular colouring pads in the centre of the salon to change fabric textures and colour hexes, so one code item can be matched to any runway theme.',
+  },
+];
 
 export default function CodesPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How do I redeem codes in Roblox Dress To Impress (DTI)?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Launch Dress To Impress on Roblox, spawn into the dressing room, click the pink handbag/code button on the left sidebar, enter your code into the text field, and press the checkmark button.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Are DTI promo codes permanent once redeemed?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes! Once redeemed, clothes, hairstyles, makeup looks, and accessories remain permanently in your DTI wardrobe inventory.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Why is my DTI code not working?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'DTI codes are case-sensitive and must be typed in ALL CAPS. Ensure you do not leave trailing spaces when pasting codes.',
-        },
-      },
-    ],
+    mainEntity: FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   };
 
   return (
@@ -55,13 +54,15 @@ export default function CodesPage() {
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-inner">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          <span>Verified Active in Roblox DTI: </span>
+          <span>{ACTIVE_CODES.length} Active Codes — Checked Against Multiple Trackers</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-          Dress To Impress Codes <span className="text-pink-400"></span>
+          Dress To Impress Codes
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-          Redeem these official Roblox Dress To Impress (DTI) codes to unlock exclusive dresses, designer handbags, crying makeup, and free Pink Cash.
+          Redeem these official Roblox Dress To Impress (DTI) codes to unlock exclusive dresses,
+          boots, handbags and hairstyles. Copy them rather than typing them — several use zeroes
+          instead of the letter O.
         </p>
       </div>
 
@@ -69,7 +70,7 @@ export default function CodesPage() {
       <section className="space-y-6">
         <h2 className="text-xl font-bold text-white flex items-center gap-2 border-b border-pink-900/40 pb-3">
           <Gift className="w-5 h-5 text-pink-400" />
-          <span>Active Clothes & Accessory Codes ({ACTIVE_CODES.length})</span>
+          <span>Active Clothes &amp; Accessory Codes ({ACTIVE_CODES.length})</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -86,12 +87,32 @@ export default function CodesPage() {
                   </span>
                 </div>
                 <div className="text-xs text-slate-300">{item.reward}</div>
-                {item.addedDate && <div className="text-[10px] text-slate-500">Added: {item.addedDate}</div>}
               </div>
               <CopyButton textToCopy={item.code} />
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Zero vs letter O warning */}
+      <section className="glass-panel p-6 rounded-2xl border border-amber-900/50 space-y-2">
+        <h2 className="text-lg font-bold text-white flex items-center gap-2">
+          <AlertCircle className="w-5 h-5 text-amber-400" />
+          <span>The Zero-vs-O Trap</span>
+        </h2>
+        <p className="text-xs text-slate-300 leading-relaxed">
+          Most failed DTI redemptions are not expired codes, they are substitution errors. These
+          codes use the <strong>number zero</strong> where you would expect the letter O:
+        </p>
+        <ul className="list-disc list-inside text-xs text-slate-300 space-y-1 leading-relaxed">
+          <li><span className="font-mono text-pink-200">CH00P1E_B4CK_AGA1N</span> — Choopie set</li>
+          <li><span className="font-mono text-pink-200">S3M_0W3N_Y4Y</span> — staff, scythe and axe</li>
+          <li><span className="font-mono text-pink-200">C4LLMEHH4LEY</span> — puffy dress and bear headband</li>
+        </ul>
+        <p className="text-xs text-slate-400 leading-relaxed">
+          Use the copy button on each card instead of retyping, and check for a trailing space if a
+          pasted code is rejected.
+        </p>
       </section>
 
       {/* How to Redeem Step-by-Step */}
@@ -106,9 +127,9 @@ export default function CodesPage() {
             <div className="w-8 h-8 rounded-lg bg-pink-900/80 text-pink-300 font-bold flex items-center justify-center text-sm">
               1
             </div>
-            <h3 className="text-sm font-bold text-white">Join DTI Dressing Room</h3>
+            <h3 className="text-sm font-bold text-white">Open the Codes Menu</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Launch Roblox Dress To Impress and enter the main dressing room lobby.
+              Launch Dress To Impress and click the pink handbag icon on the left side of the screen.
             </p>
           </div>
 
@@ -116,9 +137,9 @@ export default function CodesPage() {
             <div className="w-8 h-8 rounded-lg bg-pink-900/80 text-pink-300 font-bold flex items-center justify-center text-sm">
               2
             </div>
-            <h3 className="text-sm font-bold text-white">Click Pink Bag Icon</h3>
+            <h3 className="text-sm font-bold text-white">Paste the Code</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              On the left side of your screen, click the pink handbag / code button.
+              Paste the active code into the &quot;Enter code here&quot; box exactly as it appears.
             </p>
           </div>
 
@@ -126,11 +147,48 @@ export default function CodesPage() {
             <div className="w-8 h-8 rounded-lg bg-pink-900/80 text-pink-300 font-bold flex items-center justify-center text-sm">
               3
             </div>
-            <h3 className="text-sm font-bold text-white">Type Code & Checkmark</h3>
+            <h3 className="text-sm font-bold text-white">Hit the Checkmark</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Type or paste your active code into the box and click the checkmark to unlock your item immediately.
+              Press the checkmark button and the item lands in your wardrobe instantly.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="glass-panel p-8 rounded-2xl space-y-5">
+        <h2 className="text-2xl font-bold text-white border-b border-pink-900/40 pb-4">
+          Dress To Impress Codes FAQ
+        </h2>
+        <div className="space-y-4">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="text-sm font-bold text-pink-300">{f.q}</h3>
+              <p className="text-xs text-slate-300 leading-relaxed mt-1">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="glass-panel p-8 rounded-2xl space-y-3">
+        <h2 className="text-2xl font-bold text-white">Win the Round After the Freebies</h2>
+        <p className="text-xs text-slate-300 leading-relaxed">
+          Code items expand your wardrobe, but votes come from how you put them together.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <Link href="/theme-guide" className="text-pink-300 hover:text-pink-200 font-semibold">
+            Theme Guide — what each prompt actually wants
+          </Link>
+          <Link href="/pose-tier-list" className="text-pink-300 hover:text-pink-200 font-semibold">
+            Pose Tier List — poses voters reward
+          </Link>
+          <Link href="/layering-hacks" className="text-pink-300 hover:text-pink-200 font-semibold">
+            Layering Hacks — depth without clutter
+          </Link>
+          <Link href="/currency-farming" className="text-pink-300 hover:text-pink-200 font-semibold">
+            Currency Farming — buy what codes will not give you
+          </Link>
         </div>
       </section>
 
@@ -152,4 +210,3 @@ export default function CodesPage() {
     </div>
   );
 }
-
