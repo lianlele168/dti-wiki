@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   },
 
   title: 'Dress To Impress Theme Outfit Guide — DTI Combos',
-  description: 'Complete Roblox Dress To Impress (DTI) theme outfit combinations guide for Y2K, Gothic Romance, Met Gala, Coquette, and Dark Academia.',
+  description: 'Complete Roblox Dress To Impress (DTI) theme outfit combinations guide for Met gala, Y2K, Coquette, Grunge, and Dark Academia.',
 };
 
 export default function ThemeGuidePage() {
@@ -20,7 +20,7 @@ export default function ThemeGuidePage() {
           DTI Runway <span className="text-pink-400">Theme Outfit Guide</span>
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          Never panic during the 5-minute dressing round! Here are exact clothing item recipes, color swatches, and active codes for every official DTI theme.
+          Never panic during the 5-minute dressing round! Here are exact clothing item recipes, color swatches, and active codes for popular official DTI themes. Theme names use the official in-game spellings from a pool of 790+ themes.
         </p>
       </div>
 

@@ -137,7 +137,7 @@ export default function DtiCalculatorClient() {
               aria-label="Pose Pack Quality"
               className="w-full bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:border-pink-500"
             >
-              <option value="top">K-Pop / Supermodel (+2.5 Stars)</option>
+              <option value="top">VIP / Editorial poses (+2.5 Stars)</option>
               <option value="mid">Standard Pack (+1.5 Stars)</option>
               <option value="default">Default Walk (0 Bonus)</option>
             </select>

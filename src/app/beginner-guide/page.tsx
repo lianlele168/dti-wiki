@@ -17,7 +17,7 @@ export default function BeginnerGuidePage() {
     {
       step: '1',
       title: 'Precision Theme Interpretation & Contextual Styling',
-      desc: 'The quickest way to earn 1-star pity votes is failing to follow the drawn theme. In high-ranking pro servers, players demand creative contextual interpretations rather than literal stereotypes. If the theme is "Gothic Romance", do not merely wear an all-black t-shirt; blend deep crimson velvet textures with lace corsets, black lace gloves, and Victorian headwear to convey a coherent narrative.'
+      desc: 'The quickest way to earn 1-star pity votes is failing to follow the drawn theme. In high-ranking pro servers, players demand creative contextual interpretations rather than literal stereotypes. If the theme is "Gothic", do not merely wear an all-black t-shirt; blend deep crimson velvet textures with lace corsets, black lace gloves, and Victorian headwear to convey a coherent narrative.'
     },
     {
       step: '2',
@@ -38,15 +38,15 @@ export default function BeginnerGuidePage() {
 
   const layeringCombos = [
     { name: 'Victorian Ballerina', pieces: 'Lana Tutu + Fitted Bustier + Lace Legwarmers', rating: '5 Stars' },
-    { name: 'Cyberpunk Siren', pieces: 'LA Boots + Leather Crop Jacket + Metallic Skirt', rating: '5 Stars' },
-    { name: 'Couture Princess', pieces: 'Pixii Long Gown + Pearl Handbag + Floral Headscarf', rating: '5 Stars' },
+    { name: 'Cyberpunk Siren', pieces: 'Heeled Boots (code LABOOTS) + Leather Crop Jacket + Metallic Skirt', rating: '5 Stars' },
+    { name: 'Couture Princess', pieces: "Pixiiuwu's Iridescent Dress (code PIXIIUWU) + Pearl Handbag (code TEKKYOOZ) + Floral Headscarf", rating: '5 Stars' },
     { name: 'Dark Academia', pieces: 'Sweater Vest + Pleated Tennis Skirt + High Knee Socks', rating: '4.8 Stars' },
   ];
 
   const faqs = [
     {
       q: 'How do I win 1st place in Dress To Impress without VIP?',
-      a: 'VIP is not required to win 1st place consistently. Non-VIP players can easily achieve 5-star ratings by mastering layering hacks (stacking free code items like BELALASLAY and LANABOW over basic skirts) and selecting harmonious color palettes.'
+      a: 'VIP is not required to win 1st place consistently. Non-VIP players can easily achieve 5-star ratings by mastering layering hacks (stacking free code items like BELALASLAY and LANABOW over basic skirts) and selecting harmonious color palettes. Free codes are listed on our Codes page.'
     },
     {
       q: 'What should I do if players in the server vote unfairly (farming / friends)?',
@@ -58,7 +58,7 @@ export default function BeginnerGuidePage() {
     },
     {
       q: 'Which pose pack is the best investment in DTI?',
-      a: 'The Model Walk pack and Elegant Poses pack offer the cleanest transitions for runway judging. Their fluid motion showcases front accessories and flowing skirts without clipping through the avatar body.'
+      a: 'The VIP exclusive poses (included with the 799 Robux VIP Game Pass, also available as a 399 Robux/month subscription) and the Editorial Pose Pack (2,500 Cash) offer the cleanest transitions for runway judging. Their fluid motion showcases front accessories and flowing skirts without clipping through the avatar body.'
     }
   ];
 

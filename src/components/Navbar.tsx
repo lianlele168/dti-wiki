@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: 'Theme Guide', href: '/theme-guide', icon: Shirt },
     { name: 'Layering Hacks', href: '/layering-hacks', icon: Layers },
     { name: 'Pose Tier List', href: '/pose-tier-list', icon: Award },
-    { name: 'Pink Cash', href: '/currency-farming', icon: Coins },
+    { name: 'Cash Guide', href: '/currency-farming', icon: Coins },
     { name: '5-Star Guide', href: '/beginner-guide', icon: BookOpen },
   ];
 

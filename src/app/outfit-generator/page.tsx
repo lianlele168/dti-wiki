@@ -84,7 +84,7 @@ export default function OutfitGeneratorPage() {
             <div className="space-y-3">
               <h3 className="text-base font-semibold text-pink-300">2. Theme Accuracy & Pose Timing</h3>
               <p>
-                Strict adherence to color palettes (Gothic deep blacks/purples, Preppy pastels, Y2K neon pinks) signals authenticity. Pair with high-tier pose sequences like Model Turn or K-Pop Wave at the end of the runway for maximum votes.
+                Strict adherence to color palettes (Gothic deep blacks/purples, Preppy pastels, Y2K neon pinks) signals authenticity. Pair your look with a strong pose sequence from the VIP Game Pass or the Editorial Pose Pack at the end of the runway for maximum votes.
               </p>
             </div>
           </div>
@@ -99,11 +99,11 @@ export default function OutfitGeneratorPage() {
           <div className="space-y-4 text-sm text-slate-300">
             <div>
               <strong className="text-white block mb-1">Do code clothing items boost runway score?</strong>
-              <span>Yes! Unique code accessories like LANABODY, M3GAN, or LABOTS add visual texture and show mastery of the game, prompting higher votes from fashion servers.</span>
+              <span>Yes! Unique code clothing like KATSEYE, M3RM4ID, or UMOYAE adds visual texture and shows mastery of the game, prompting higher votes from fashion servers.</span>
             </div>
             <div>
               <strong className="text-white block mb-1">What is the highest-rated pose pack?</strong>
-              <span>Pose Pack 3 (K-Pop Idol) and Pose Pack 5 (Supermodel Runway) are voted the highest across public and custom pro servers.</span>
+              <span>VIP exclusive poses (included with the 799 Robux VIP Game Pass) and the Editorial Pose Pack (2,500 Cash) are voted the highest across public and custom pro servers.</span>
             </div>
           </div>
         </div>

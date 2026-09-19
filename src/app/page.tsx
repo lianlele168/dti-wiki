@@ -28,7 +28,7 @@ export default function HomePage() {
         name: 'What are active Dress To Impress (DTI) codes for ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Active DTI codes include LANABODY, M3GAN, LABOTS, TEARS, and LANA. Redeem them for free dresses, doll hair, cyber boots, and crying glitter makeup.',
+          text: 'Active DTI codes include KATSEYE, LANATUTU, M3RM4ID, UMOYAE, and LANA. Redeem them for free clothing sets, dresses, boots, and accessories in the game.',
         },
       },
       {
@@ -36,7 +36,7 @@ export default function HomePage() {
         name: 'How do you score 5 stars on Dress To Impress runway?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'To get voted 5 stars in DTI, match the exact theme color palette, use clothing layering hacks to make custom dresses, use code accessories, and equip top-tier pose packs like K-Pop Idol or Model Walk.',
+          text: 'To get voted 5 stars in DTI, match the exact theme color palette, use clothing layering hacks to make custom dresses, use code accessories, and equip top-tier poses from the VIP Game Pass (799 Robux) or Cash pose packs like the Editorial Pose Pack (2,500 Cash).',
         },
       },
     ],
@@ -196,7 +196,7 @@ export default function HomePage() {
                 Runway Theme Guide
               </h3>
               <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                Outfit recipes for Y2K, Gothic Romance, Coquette, Met Gala, and Dark Academia.
+                Outfit recipes for Y2K, Gothic, Coquette, Met gala, and Dark Academia.
               </p>
             </div>
           </Link>
@@ -224,7 +224,7 @@ export default function HomePage() {
                 Pose Pack Tier List
               </h3>
               <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                Ranking for K-Pop Idol Poses, Model Walk, and Vintage Hollywood.
+                Ranking for VIP, Editorial, Summer, and Ivy League pose packs.
               </p>
             </div>
           </Link>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   },
 
   title: 'Dress To Impress Pose Pack Tier List — DTI Poses',
-  description: 'Ranking for all Roblox Dress To Impress (DTI) pose packs including K-Pop Idol, Model Walk, and Vintage Hollywood poses.',
+  description: 'Ranking for all Roblox Dress To Impress (DTI) pose packs including VIP exclusive poses, Editorial, Summer, and Ivy League packs.',
 };
 
 export default function PoseTierListPage() {
@@ -20,7 +20,7 @@ export default function PoseTierListPage() {
           DTI Pose Pack <span className="text-pink-400">Tier List</span>
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-          Poses are 50% of your runway vote score! Find out which pose packs give you the highest 5-star rating from judges.
+          Poses are 50% of your runway vote score! Find out which pose packs give you the highest 5-star rating from judges. Prices verified via the DTI Wiki Shop page and IGN patch notes.
         </p>
       </div>
 
@@ -45,6 +45,17 @@ export default function PoseTierListPage() {
           </div>
         ))}
       </div>
+
+      <p className="text-center text-xs text-slate-500">
+        Sources:{' '}
+        <a href="https://dti-dress-to-impress.fandom.com/wiki/Shop" target="_blank" rel="noopener noreferrer" className="text-pink-400/80 hover:text-pink-300 underline underline-offset-2">
+          DTI Wiki — Shop
+        </a>{' '}
+        •{' '}
+        <a href="https://www.ign.com/wikis/dress-to-impress/Dress_to_Impress_Summer_Update_2025_(Part_1)_-_All_Details_and_Patch_Notes" target="_blank" rel="noopener noreferrer" className="text-pink-400/80 hover:text-pink-300 underline underline-offset-2">
+          IGN — Summer Update 2025
+        </a>
+      </p>
     </div>
   );
 }
