@@ -10,12 +10,12 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Chloe Sinclair',
-  role = 'Top Model & Runway Styling Strategist',
-  experience = 'Top 50 Runway Rank & 1,200+ Podiums',
+  authorName = 'Hlele',
+  role = 'Editor',
+  experience = 'AI-assisted research, human-reviewed',
   patchVersion = 'The Baddie & Brat Runway Update Verified',
   lastUpdated = '',
-  editorialNote = 'All theme palettes, VIP clipping layering combos, and pose animation frame ratings are tested in competitive public and pro lobbies.',
+  editorialNote = 'All theme palettes, VIP clipping layering combos, and pose animation frame ratings are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified.',
 }: AuthorCardProps) {
   return (
     <div className="w-full rounded-2xl bg-slate-900/70 border border-pink-500/20 p-4 sm:p-5 backdrop-blur-md my-6 text-left shadow-lg">

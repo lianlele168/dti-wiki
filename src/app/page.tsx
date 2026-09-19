@@ -19,8 +19,8 @@ export default function HomePage() {
 
     author: {
       '@type': 'Person',
-      name: 'Chloe Sinclair',
-      jobTitle: 'Top Model & Runway Styling Strategist',
+      name: 'Hlele',
+      jobTitle: 'Editor',
     },
     mainEntity: [
       {
@@ -95,11 +95,11 @@ export default function HomePage() {
           {/* Author Card */}
           <div className="max-w-3xl mx-auto text-left">
             <AuthorCard
-              authorName="Chloe Sinclair"
-              role="Top Model & Runway Styling Strategist"
-              experience="Top 50 Runway Rank & 1,200+ Podiums"
+              authorName="Hlele"
+              role="Editor"
+              experience="AI-assisted research, human-reviewed"
               patchVersion="Brat Runway Update Verified"
-              editorialNote="All theme palettes, VIP clipping layering combos, and pose animation frame ratings are tested in competitive public and pro lobbies."
+              editorialNote="All theme palettes, VIP clipping layering combos, and pose animation frame ratings are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified."
             />
           </div>
 

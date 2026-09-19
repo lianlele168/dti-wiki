@@ -87,6 +87,9 @@ export default function Footer() {
           <Heart className="w-3 h-3 text-rose-500 fill-rose-500 inline" />
         </div>
       </div>
+      <div className="max-w-7xl mx-auto mt-4 text-[11px] text-slate-600 text-center">
+        <p>Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail</p>
+      </div>
     </footer>
   );
 }
