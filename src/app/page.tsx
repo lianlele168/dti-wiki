@@ -116,7 +116,7 @@ export default function HomePage() {
                 <span className="text-pink-400 font-bold">Runway Finale</span> — 5-star Hollywood Glamour podium voting & pose synchronization
               </div>
               <span className="px-2.5 py-1 bg-pink-500/20 text-pink-300 text-[11px] rounded-lg border border-pink-500/30">
-                Top Model Verified
+                Top Model
               </span>
             </div>
           </div>
