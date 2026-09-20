@@ -13,7 +13,7 @@ export default function AuthorCard({
   authorName = 'Hlele',
   role = 'Editor',
   experience = 'AI-assisted research, human-reviewed',
-  patchVersion = 'The Baddie & Brat Runway Update Verified',
+  patchVersion = 'The Baddie & Brat Runway Update',
   lastUpdated = '',
   editorialNote = 'All theme palettes, VIP clipping layering combos, and pose animation frame ratings are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified.',
 }: AuthorCardProps) {
@@ -28,7 +28,7 @@ export default function AuthorCard({
             <div className="flex items-center space-x-2">
               <span className="font-bold text-white text-sm sm:text-base">{authorName}</span>
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20">
-                ✓ Runway Verified
+                Independent editorial
               </span>
             </div>
             <p className="text-xs text-pink-200/70 mt-0.5">

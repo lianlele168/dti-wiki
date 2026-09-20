@@ -98,7 +98,7 @@ export default function HomePage() {
               authorName="Hlele"
               role="Editor"
               experience="AI-assisted research, human-reviewed"
-              patchVersion="Brat Runway Update Verified"
+              patchVersion="Brat Runway Update"
               editorialNote="All theme palettes, VIP clipping layering combos, and pose animation frame ratings are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified."
             />
           </div>
